@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		B0EBAF4D20CC960800B41A1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF4C20CC960800B41A1B /* AppDelegate.m */; };
-		B0EBAF5020CC960800B41A1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF4F20CC960800B41A1B /* ViewController.m */; };
 		B0EBAF5320CC960800B41A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAF5120CC960800B41A1B /* Main.storyboard */; };
 		B0EBAF5520CC960900B41A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAF5420CC960900B41A1B /* Assets.xcassets */; };
 		B0EBAF5820CC960900B41A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EBAF5620CC960900B41A1B /* LaunchScreen.storyboard */; };
 		B0EBAF5B20CC960900B41A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF5A20CC960900B41A1B /* main.m */; };
+		B0EBAF6720CC969B00B41A1B /* KPDPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF6620CC969B00B41A1B /* KPDPost.m */; };
+		B0EBAF6A20CC96BF00B41A1B /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF6920CC96BF00B41A1B /* PostListTableViewController.swift */; };
+		B0EBAF6C20CC96DC00B41A1B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF6B20CC96DC00B41A1B /* PostTableViewCell.swift */; };
+		B0EBAF6F20CC971A00B41A1B /* KPDPostModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EBAF6E20CC971A00B41A1B /* KPDPostModelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0EBAF4820CC960800B41A1B /* 2ndRedditSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2ndRedditSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EBAF4B20CC960800B41A1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0EBAF4C20CC960800B41A1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B0EBAF4E20CC960800B41A1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B0EBAF4F20CC960800B41A1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B0EBAF5220CC960800B41A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0EBAF5420CC960900B41A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EBAF5720CC960900B41A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EBAF5920CC960900B41A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0EBAF5A20CC960900B41A1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0EBAF6520CC969B00B41A1B /* KPDPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPDPost.h; sourceTree = "<group>"; };
+		B0EBAF6620CC969B00B41A1B /* KPDPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPDPost.m; sourceTree = "<group>"; };
+		B0EBAF6820CC96BF00B41A1B /* 2ndRedditSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2ndRedditSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0EBAF6920CC96BF00B41A1B /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		B0EBAF6B20CC96DC00B41A1B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		B0EBAF6D20CC971A00B41A1B /* KPDPostModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPDPostModelController.h; sourceTree = "<group>"; };
+		B0EBAF6E20CC971A00B41A1B /* KPDPostModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPDPostModelController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,54 @@
 		B0EBAF4A20CC960800B41A1B /* 2ndRedditSearch */ = {
 			isa = PBXGroup;
 			children = (
+				B0EBAF6420CC967100B41A1B /* View Controller */,
+				B0EBAF6320CC966900B41A1B /* UI */,
+				B0EBAF6220CC965E00B41A1B /* Model Controller */,
+				B0EBAF6120CC965600B41A1B /* Model  */,
 				B0EBAF4B20CC960800B41A1B /* AppDelegate.h */,
 				B0EBAF4C20CC960800B41A1B /* AppDelegate.m */,
-				B0EBAF4E20CC960800B41A1B /* ViewController.h */,
-				B0EBAF4F20CC960800B41A1B /* ViewController.m */,
-				B0EBAF5120CC960800B41A1B /* Main.storyboard */,
 				B0EBAF5420CC960900B41A1B /* Assets.xcassets */,
-				B0EBAF5620CC960900B41A1B /* LaunchScreen.storyboard */,
 				B0EBAF5920CC960900B41A1B /* Info.plist */,
 				B0EBAF5A20CC960900B41A1B /* main.m */,
 			);
 			path = 2ndRedditSearch;
+			sourceTree = "<group>";
+		};
+		B0EBAF6120CC965600B41A1B /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				B0EBAF6520CC969B00B41A1B /* KPDPost.h */,
+				B0EBAF6620CC969B00B41A1B /* KPDPost.m */,
+				B0EBAF6820CC96BF00B41A1B /* 2ndRedditSearch-Bridging-Header.h */,
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		B0EBAF6220CC965E00B41A1B /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0EBAF6D20CC971A00B41A1B /* KPDPostModelController.h */,
+				B0EBAF6E20CC971A00B41A1B /* KPDPostModelController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		B0EBAF6320CC966900B41A1B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B0EBAF6B20CC96DC00B41A1B /* PostTableViewCell.swift */,
+				B0EBAF5620CC960900B41A1B /* LaunchScreen.storyboard */,
+				B0EBAF5120CC960800B41A1B /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B0EBAF6420CC967100B41A1B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0EBAF6920CC96BF00B41A1B /* PostListTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +147,7 @@
 				TargetAttributes = {
 					B0EBAF4720CC960800B41A1B = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -141,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0EBAF5020CC960800B41A1B /* ViewController.m in Sources */,
+				B0EBAF6720CC969B00B41A1B /* KPDPost.m in Sources */,
+				B0EBAF6F20CC971A00B41A1B /* KPDPostModelController.m in Sources */,
 				B0EBAF5B20CC960900B41A1B /* main.m in Sources */,
+				B0EBAF6C20CC96DC00B41A1B /* PostTableViewCell.swift in Sources */,
 				B0EBAF4D20CC960800B41A1B /* AppDelegate.m in Sources */,
+				B0EBAF6A20CC96BF00B41A1B /* PostListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
 				INFOPLIST_FILE = 2ndRedditSearch/Info.plist;
@@ -292,6 +342,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teadoan.-ndRedditSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "2ndRedditSearch/Model /2ndRedditSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
 				INFOPLIST_FILE = 2ndRedditSearch/Info.plist;
@@ -309,6 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teadoan.-ndRedditSearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "2ndRedditSearch/Model /2ndRedditSearch-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
